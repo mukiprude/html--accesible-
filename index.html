@@ -2,51 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Prudence Mukite's beginner portfolio webpage." />
-  <meta name="keywords" content="Prudence Mukite, Web Design, Portfolio, Beginner HTML" />
-  <meta name="author" content="Prudence Mukite" />
-  <title>Prudence's Web Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prudence & Sarah – Web Developers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    .box {
+      background-color: white;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      padding: 0.7rem 1.5rem;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Welcome to My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>Prudence Mukite & Sarah Lusweti</h1>
+    <p>Beginner Web Developers | HTML • CSS • Python</p>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm Prudence Mukite, a beginner in web design. I enjoy creating simple, accessible websites using HTML.</p>
-      <img src="my-photo.jpg" alt="Cartoon of Prudence Mukite" width="200" />
-    </section>
+  <section>
+    <div class="box">
+      <h2>About Us</h2>
+      <p>
+        We are Prudence Mukite and Sarah Lusweti, beginner web developers who are passionate about creating beautiful websites and solving real-world problems using code. 
+        We recently completed our Form Four in 2024 and are preparing to join college to further our studies in technology.
+      </p>
+    </div>
 
-    <section id="projects">
-      <h2>My Projects</h2>
-      <article>
-        <h3>Project 1: Simple Web Page</h3>
-        <p>This is my first project using HTML5. It is designed to be semantic and accessible.</p>
-      </article>
-      <article>
-        <h3>Project 2: Personal Blog Layout</h3>
-        <p>I created a basic blog structure using only HTML and some simple styling.</p>
-      </article>
-    </section>
+    <div class="box">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Python</li>
+      </ul>
+    </div>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:mukite18@gmail.com">mukite18@gmail.com</a></p>
-    </section>
-  </main>
+    <div class="box">
+      <h2>Educational Background</h2>
+      <p>Completed Form Four, 2024<br/>Waiting to join college in 2025.</p>
+      <p><a href="cv-prudence-sarah.pdf" download>📄 Download Our CV (PDF)</a></p>
+    </div>
+
+    <div class="box">
+      <h2>Our Interests</h2>
+      <p>
+        We love coding, building websites, and learning new technologies. Our goal is to use our skills to solve real-life problems and help our community grow through tech.
+      </p>
+    </div>
+
+    <div class="box">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Accessible Web Page by Prudence</strong> – A beginner HTML page built with accessibility in mind. 
+          <br />
+          🔗 <a href="https://github.com/mukiprude/html--accesible-" target="_blank">View on GitHub</a>
+        </li>
+        <li>
+          <strong>Accessible Web Page by Sarah</strong> – A simple and clean accessible page using semantic HTML.
+          <br />
+          🔗 <a href="https://github.com/sarahn17/html-accessible--page" target="_blank">View on GitHub</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Contact Us</h2>
+      <p><strong>📞 Prudence Mukite:</strong> 0116143370</p>
+      <p><strong>📞 Sarah Lusweti:</strong> 0114619850</p>
+      <p><strong>📧 Emails:</strong><br/>
+        <a href="mailto:mukite18@gmail.com">mukite18@gmail.com</a><br/>
+        <a href="mailto:luswetisarah869@gmail.com">luswetisarah869@gmail.com</a>
+      </p>
+
+      <form action="mailto:luswetisarah869@gmail.com,mukite18@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Your Name" required />
+        <input type="email" name="Email" placeholder="Your Email" required />
+        <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Prudence Mukite. All rights reserved.</p>
+    <p>© 2025 Prudence Mukite & Sarah Lusweti | Beginner Web Developers</p>
   </footer>
+
 </body>
 </html>
+
